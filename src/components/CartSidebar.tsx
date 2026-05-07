@@ -9,6 +9,8 @@ interface CartSidebarProps {
   onCheckout: () => void;
 }
 
+
+
 export default function CartSidebar({ cart, onClose, onRemove, onUpdateQty, onCheckout }: CartSidebarProps) {
   const cartTotal = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
 
